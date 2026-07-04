@@ -58,13 +58,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<meta name="description" content="Sara Liyanage-Denney — founder of KINSPACE, executive coach, keynote speaker, and technology co-founder. Rights-based intelligence. Co-designing with the people closest to the problem. Gubbi Gubbi Country, Queensland, Australia.">
-<link rel="canonical" href="https://sara.kinspace.co">
-<meta property="og:type" content="profile">
-<meta property="og:url" content="https://sara.kinspace.co">
-<meta property="og:title" content="Sara Liyanage-Denney — Founder, KINSPACE">
-<meta property="og:description" content="Co-designing with the people closest to the problem. Using technology to redistribute power and agency. Executive coach, keynote speaker, technology co-founder.">
-<meta property="og:locale" content="en_AU">
 <meta name="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
@@ -238,6 +231,20 @@ h1.hero-name{font-family:var(--font-display);font-weight:500;font-size:clamp(34p
 .footer-link{color:rgba(244,237,229,0.8);text-decoration:underline;text-underline-offset:2px;font-size:14px;font-weight:500;min-height:var(--tap);display:inline-flex;align-items:center;gap:var(--space-2);padding:var(--space-1) 0;transition:color var(--ease);}
 .footer-link:hover{color:var(--cream);}
 .footer-bottom{margin-top:var(--space-12);padding-top:var(--space-6);border-top:1px solid rgba(244,237,229,0.1);font-size:12px;color:rgba(244,237,229,0.4);}
+
+/* PULL QUOTE — Option B */
+.pull-quote{border-left:2px solid var(--ink);padding:12px 20px;margin:var(--space-10) 0;}
+.pull-quote blockquote{font-family:var(--font-display);font-size:15px;font-weight:400;line-height:1.6;color:var(--ink);font-style:normal;margin:0;}
+.pull-quote cite{display:block;font-size:11px;font-style:normal;color:var(--ink-muted);margin-top:8px;}
+/* FAQ PROGRESSIVE DISCLOSURE */
+.faq-item{border:1px solid var(--border-mid);border-radius:3px;overflow:hidden;margin-bottom:8px;background:var(--cream-deep);}
+.faq-item summary{font-family:var(--font-display);font-size:16px;font-weight:500;padding:18px 24px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--ink);min-height:48px;line-height:1.4;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:'+';font-size:20px;color:var(--ink-muted);font-weight:300;flex-shrink:0;margin-left:16px;}
+.faq-item[open] summary::after{content:'\2212';}
+.faq-item[open] summary{border-bottom:1px solid var(--border);}
+.faq-answer{padding:18px 24px 22px;font-size:14px;color:var(--ink-soft);line-height:1.75;}
+
 </style>
 </head>
 <body>
