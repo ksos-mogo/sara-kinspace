@@ -34,27 +34,17 @@
         {
           "@type": "Question",
           "name": "What does executive coaching with Sara Liyanage-Denney involve?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Coaching with Sara involves fortnightly 1:1 sessions across a 10 or 20 session package. Sessions move between four modes — Move (reduce cognitive load, find the thread), See (surface what's already there), Decide (trust what you already know), and Link (the tangent that's actually the insight). It starts with a leadership behavioural profile and builds a personal development action plan with accountability built in. The work moves through the work — not theory, not a psychology session."}
-        },
-        {
-          "@type": "Question",
-          "name": "Who does Sara Liyanage-Denney coach?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Sara coaches C-suite and enterprise leaders in Fortune 500 companies, global financial services, technology, and UN agencies. She also coaches founders building their first or next venture, small business owners navigating growth and complexity, neurodivergent leaders and founders, and leaders navigating situations that don't fit in a framework — the relationship that's costing them, the decision they keep deferring, the conversation that hasn't happened."}
+          "acceptedAnswer": {"@type": "Answer", "text": "Coaching with Sara involves fortnightly 1:1 sessions across a 10 or 20 session package. Sessions move between four modes — Move (reduce cognitive load, find the thread), See (surface what's already there), Decide (trust what you already know), and Link (the tangent that's actually the insight). It starts with a leadership behavioural profile. The insight happens in the doing."}
         },
         {
           "@type": "Question",
           "name": "How long is an executive coaching engagement with Sara?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Sara offers two packages: 10 fortnightly sessions over 5 months, or 20 fortnightly sessions over 10 months. The 20-session package includes a personal growth phase (months 1-5) and a team growth phase (months 6-10), with quarterly outcomes reviews. Both packages begin with a leadership behavioural profile and include accountability between sessions."}
+          "acceptedAnswer": {"@type": "Answer", "text": "Sara offers two packages: 10 fortnightly sessions over 5 months, or 20 fortnightly sessions over 10 months. The 20-session package includes a personal growth phase and a team growth phase — this is where the cascade effect happens."}
         },
         {
           "@type": "Question",
-          "name": "How do I start coaching with Sara Liyanage-Denney?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Start with a free 20-minute discovery session — no commitment, no pitch. Email sara@kinspace.co with the subject line 'Coaching Discovery Session' and Sara will be in touch directly."}
-        },
-        {
-          "@type": "Question",
-          "name": "What makes Sara Liyanage-Denney's coaching approach different?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Sara is neurodivergent. Her coaching is rights-based and universally designed from the ground up — not retrofitted. She's been coaching since 2012, with a practice that spans Fortune 500 C-suite leaders, founders, and small business owners. The methodology surfaces what's already there rather than imposing a framework. The work moves through the work — each session moves something, not just surfaces it."}
+          "name": "How do I know if coaching with Sara is the right fit?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Start with a free 20-minute discovery session — no commitment, no pitch. Just an honest conversation about what you're working with. Email sara@kinspace.co."}
         }
       ]
     }
@@ -64,13 +54,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<meta name="description" content="Executive coaching with Sara Liyanage-Denney — for C-suite leaders, founders, and small business owners. The leader everyone is waiting on. The founder doing it without the infrastructure. The situation you can't say out loud. 10 or 20 session packages, fortnightly.">
-<link rel="canonical" href="https://sara.kinspace.co/coaching">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://sara.kinspace.co/coaching">
-<meta property="og:title" content="Executive Coaching — Sara Liyanage-Denney">
-<meta property="og:description" content="Coaching for the leader who isn't getting the support they actually need. 14 years of practice. Rights-based, universally designed. 10 or 20 session packages, fortnightly.">
-<meta property="og:locale" content="en_AU">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -135,12 +118,27 @@ body{background:var(--cream);color:var(--ink);font-family:var(--font-body);font-
 .quote-card blockquote{font-family:var(--font-body);font-size:16px;line-height:1.75;color:var(--ink);font-weight:400;}
 .quote-card cite{display:block;font-size:13px;color:var(--ink-soft);margin-top:var(--space-4);font-style:normal;font-weight:500;}
 
+/* PULL QUOTE — Option B: border-left, no background, serif */
+.pull-quote{border-left:2px solid var(--ink);padding:12px 20px;margin:var(--space-10) 0;}
+.pull-quote blockquote{font-family:var(--font-display);font-size:15px;font-weight:400;line-height:1.6;color:var(--ink);font-style:normal;margin:0;}
+.pull-quote cite{display:block;font-size:11px;font-style:normal;color:var(--ink-muted);margin-top:8px;}
+
+/* FAQ PROGRESSIVE DISCLOSURE */
+.faq-section{margin-top:var(--space-4);}
+.faq-item{border:1px solid var(--border-mid);border-radius:3px;overflow:hidden;margin-bottom:8px;background:var(--cream-deep);}
+.faq-item summary{font-family:var(--font-display);font-size:16px;font-weight:500;padding:18px 24px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--ink);min-height:48px;line-height:1.4;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:'+';font-size:20px;color:var(--ink-muted);font-weight:300;flex-shrink:0;margin-left:16px;}
+.faq-item[open] summary::after{content:'−';}
+.faq-item[open] summary{border-bottom:1px solid var(--border);}
+.faq-answer{padding:18px 24px 22px;font-size:14px;color:var(--ink-soft);line-height:1.75;}
+
 /* SHARED */
 .section-eyebrow{font-size:12px;font-weight:500;letter-spacing:.10em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:var(--space-8);}
 
 /* PAGE HERO */
 .page-hero{padding:var(--space-20) 0 var(--space-16);}
-.page-hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-20);align-items:start;}
+.page-hero-inner{display:grid;grid-template-columns:1.2fr 0.8fr;gap:var(--space-16);align-items:end;}
 @media(max-width:760px){.page-hero-inner{grid-template-columns:1fr;gap:var(--space-10);}}
 .page-eyebrow{font-size:12px;font-weight:500;letter-spacing:.10em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:var(--space-5);}
 h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30px,4vw,48px);line-height:1.1;letter-spacing:-0.02em;color:var(--ink);margin-bottom:var(--space-6);}
@@ -242,36 +240,16 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
         <div>
           <div class="page-eyebrow">Executive coaching</div>
           <h1 class="page-title">Most of what you're looking for is already in the room.</h1>
-          <p class="page-lede">The decision you keep circling. The team dynamic you can't quite name. The market you sense is there but can't see clearly yet. Coaching that helps you get to what's already present — and act on it.</p>
-          <p class="page-lede" style="margin-top:var(--space-4);font-size:clamp(15px,1.6vw,17px);">Sara has built four ventures, co-founded with people who've been shut out of the rooms they should be in, and coached leaders through the moments that don't show up in a performance review. She knows what it costs to build without the right support.</p>
-          <div class="page-cta-inline">
-            <a class="text-link text-link-sm" href="mailto:sara@kinspace.co?subject=Coaching%20Discovery%20Session">
-              Book a free 20-minute discovery session
-              <svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
+          <p class="page-lede">The decision you keep circling. The team dynamic you can't quite name. Coaching that gets to what's already present — and acts on it.</p>
         </div>
         <div>
-          <div class="quote-card">
-            <blockquote>"Before reaching out to Sara, I was feeling overwhelmed with the competing demands of my business. I needed inspiration and accountability to help prioritise, organise my time, and give me breathing space to provide the leadership my team was looking for. After working with Sara, my eyes have been opened up to a much deeper understanding of cause and effect and self-awareness. The 'why'. As I've been able to implement the coaching for myself and form new and sustainable habits, I've been able to identify in my team, helping them to do the same. The cascade effect in my business has been noticeable. Sara now coaches members of my team regularly."</blockquote>
+          <div class="pull-quote" style="margin:0;">
+            <blockquote>"The cascade effect in my business has been noticeable. Sara now coaches members of my team regularly."</blockquote>
             <cite>M Kelly, Managing Director</cite>
           </div>
         </div>
       </div>
     </section>
-  </div>
-
-  <hr class="hr">
-
-  <!-- EARLY CTA STRIP -->
-  <div class="wrap">
-    <div style="padding:var(--space-8) 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-4);">
-      <p style="font-size:16px;color:var(--ink-soft);">Start with a free 20-minute conversation — no commitment, no pitch.</p>
-      <a class="text-link text-link-sm" href="mailto:sara@kinspace.co?subject=Coaching%20Discovery%20Session">
-        Book a discovery session
-        <svg class="arr" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
   </div>
 
   <hr class="hr">
@@ -283,22 +261,32 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
       <div class="outcomes-grid">
         <div class="outcome-item">
           <div class="outcome-title">You'll stop deferring the decision.</div>
-          <p class="outcome-body">The one you've been circling for weeks. The one where every option feels wrong. Coaching that gets you to the actual decision — not the version of it that feels safe to discuss in a meeting.</p>
+          <p class="outcome-body">The one you've been circling for weeks. Coaching that gets you to the actual decision — not the safe version of it.</p>
         </div>
         <div class="outcome-item">
           <div class="outcome-title">You'll hear what's actually being said.</div>
-          <p class="outcome-body">What your team is experiencing rarely makes it into the room where you make decisions. Coaching that builds your ability to hear what's being felt, what's blocking progress, and what needs to change — before it becomes a retention problem.</p>
+          <p class="outcome-body">What your team is experiencing rarely makes it into the room. This changes that — before it becomes a retention problem.</p>
         </div>
         <div class="outcome-item">
           <div class="outcome-title">You'll stop losing the people you can't afford to lose.</div>
-          <p class="outcome-body">Not through a new HR policy. Through changing how you show up. When a leader shifts, the team shifts. The cascade effect is real — and it starts with one conversation that goes differently than it would have before.</p>
+          <p class="outcome-body">Not through a new HR policy. Through changing how you show up. When a leader shifts, the team shifts.</p>
         </div>
         <div class="outcome-item">
           <div class="outcome-title">You'll see the market you've been missing.</div>
-          <p class="outcome-body">The customers your systems were never designed to reach. The talent your hiring process screens out before you meet them. When it works for the person hardest to reach, it works better for everyone. Universal design isn't an accommodation — it's a market intelligence strategy. Coaching that builds the capacity to find what's been invisible.</p>
+          <p class="outcome-body">The customers your systems were never designed to reach. Universal design isn't an accommodation — it's a market intelligence strategy.</p>
         </div>
       </div>
     </section>
+  </div>
+
+  <hr class="hr">
+
+  <!-- PULL QUOTE — after outcomes -->
+  <div class="wrap">
+    <div class="pull-quote" aria-label="Client testimonial">
+      <blockquote>"Sara doesn't tell you what to think. She shows you what you already know — and then the thing you were stuck on just... moves."</blockquote>
+      <cite>M Kelly, Managing Director</cite>
+    </div>
   </div>
 
   <hr class="hr">
@@ -310,15 +298,15 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
       <div class="who-grid">
         <div class="who-block">
           <h3>The leader everyone is waiting on.</h3>
-          <p>C-suite and senior leaders in Fortune 500 companies, global financial services, technology, and UN agencies. You make the calls. You hold the complexity. Coaching for the person who needs somewhere to think before they've to decide — and who rarely has it. Stop losing the people you can't afford to lose.</p>
+          <p>C-suite and senior leaders. You make the calls, you hold the complexity, and you rarely have somewhere to think before you decide.</p>
         </div>
         <div class="who-block">
           <h3>The founder doing it without the infrastructure.</h3>
-          <p>Building something real without the network, the capital, or the room full of people that others take for granted. The co-founder dynamic that's getting harder, the pivot you know you need to make, the conversation you keep deferring. Sara is neurodivergent — if you've been building in systems that weren't designed for how you think, this is different.</p>
+          <p>Building something real without the network or the capital others take for granted. If you've been building in systems that weren't designed for how you think, this is different.</p>
         </div>
         <div class="who-block">
           <h3>The leader with something they can't say out loud.</h3>
-          <p>The situation you can't stop thinking about. The relationship that's costing you. The team dynamic that's quietly getting worse. The conversation that needs to happen and hasn't. Any seniority, any industry. Coaching for what doesn't fit in a framework — and for the leader who needs a room where they can say what's actually going on.</p>
+          <p>The situation you can't stop thinking about. The conversation that needs to happen and hasn't. Coaching for what doesn't fit in a framework.</p>
         </div>
       </div>
     </section>
@@ -330,19 +318,19 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
   <div class="wrap">
     <section class="approach" aria-label="The approach">
       <div class="section-eyebrow">The approach</div>
-      <p class="approach-intro">Sara surfaces what's already there — the capability your team isn't showing you, the pattern you can't see from where you're standing, the decision you already know how to make. The problem she's obsessed with: making sure people understand, and feel understood. The methodology has been the same for 14 years across every context: ask the question that finds what's been missed, then build from what you find.</p>
+      <p class="approach-intro">Sara surfaces what's already there — the pattern you can't see from where you're standing, the decision you already know how to make. The methodology has been the same for 14 years: find what's been missed, then build from what you find.</p>
       <div class="approach-grid">
         <div class="approach-block">
           <h3>Seeing what your position makes invisible</h3>
-          <p>Every leader has a view that their role creates — and a view that their role blocks. What your team experiences, what your organisation actually thinks, what the market is doing that your current lens can't pick up. Coaching that expands what you're able to see from where you stand.</p>
+          <p>Every leader has a view their role creates — and a view it blocks. Coaching that expands what you're able to see from where you stand.</p>
         </div>
         <div class="approach-block">
           <h3>How you're showing up</h3>
-          <p>A guided process of becoming more reflexive about your own patterns — how you respond under pressure, what you reach for when things get hard, what you do in conflict that you'd change if you could see it in real time. Pattern recognition that changes what happens next.</p>
+          <p>How you respond under pressure. What you reach for in conflict. What you'd change if you could see it in real time. Pattern recognition that changes what happens next.</p>
         </div>
         <div class="approach-block">
           <h3>The question before the strategy</h3>
-          <p>Every session runs the same questions: who's most impacted, who's not speaking, what's being missed, and who can help you address it. The answers are usually already in the room. The coaching is how you hear them.</p>
+          <p>Who's most impacted, who's not speaking, what's being missed. The answers are usually already in the room.</p>
         </div>
         <div class="approach-block">
           <h3>Accountability that moves things</h3>
@@ -354,27 +342,37 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
 
   <hr class="hr">
 
+  <!-- PULL QUOTE — after approach -->
+  <div class="wrap">
+    <div class="pull-quote" aria-label="Client testimonial">
+      <blockquote>"What our executive team didn't see clearly was the missed opportunity of each other's unique perspective. Sara exposed the opportunity to see what was hidden."</blockquote>
+      <cite>Rob Freeman, CEO, Sime Darby Industrial Solutions</cite>
+    </div>
+  </div>
+
+  <hr class="hr">
+
   <!-- MOVE SEE DECIDE LINK -->
   <div class="wrap">
     <section style="padding:var(--space-20) 0;" aria-label="How Sara works">
       <div class="section-eyebrow">How it works</div>
-      <p style="font-size:18px;color:var(--ink-soft);max-width:600px;line-height:1.75;margin-bottom:var(--space-12);">Every session moves between four modes — automatically, without Sara needing to name what she needs. This is what makes it different from a psychology session or a strategy workshop. The work moves through the work.</p>
+      <p style="font-size:18px;color:var(--ink-soft);max-width:600px;line-height:1.75;margin-bottom:var(--space-12);">Every session moves between four modes — automatically, without needing to name what's needed.</p>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-8) var(--space-16);">
         <div style="border-top:1px solid var(--border-mid);padding-top:var(--space-5);">
           <div style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink);margin-bottom:var(--space-3);">Move</div>
-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">Something's happening. Reduce cognitive load. Find the one thread to pull. The work starts here — with what's actually in the way right now, not what's on the agenda.</p>
+          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">Something's happening. Reduce cognitive load. Find the one thread to pull.</p>
         </div>
         <div style="border-top:1px solid var(--border-mid);padding-top:var(--space-5);">
           <div style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink);margin-bottom:var(--space-3);">See</div>
-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">Something's true that hasn't been fully looked at. Sara holds the pattern without judgment. You're always the authority on your own experience. This is the mode that changes what you can see from where you're standing.</p>
+          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">Something's true that hasn't been fully looked at. Hold the pattern without judgment.</p>
         </div>
         <div style="border-top:1px solid var(--border-mid);padding-top:var(--space-5);">
           <div style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink);margin-bottom:var(--space-3);">Decide</div>
-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">You already know. The session helps you trust it — names the tension, witnesses the decision so it doesn't get unmade by anxiety later. The decision is marked. It holds.</p>
+          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">You already know. The session helps you trust it. The decision is marked. It holds.</p>
         </div>
         <div style="border-top:1px solid var(--border-mid);padding-top:var(--space-5);">
           <div style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink);margin-bottom:var(--space-3);">Link</div>
-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">The tangent is the thing. The connection that looks like a distraction is usually where the real insight lives. This is the mode that ND brains are built for — and what most coaching processes miss entirely.</p>
+          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">The tangent is the thing. The connection that looks like a distraction is usually where the real insight lives.</p>
         </div>
       </div>
     </section>
@@ -386,12 +384,12 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
   <div class="wrap">
     <section class="packages" aria-label="Coaching packages">
       <div class="section-eyebrow">Packages</div>
-      <p class="packages-intro">Two packages. One focused arc, one sustained programme. Both fortnightly. The insight happens in the doing — each session moves something, not just surfaces it.</p>
+      <p class="packages-intro">Two packages. Both fortnightly. Each session moves something.</p>
       <div class="packages-grid">
         <div class="package-card">
           <div class="package-name">10 sessions</div>
           <div class="package-sessions">Fortnightly · 5 months</div>
-          <p class="package-desc">For a specific challenge, transition, or decision you've been deferring. A complete arc — from understanding what's actually going on to an action plan with accountability built in.</p>
+          <p class="package-desc">A specific challenge, transition, or decision. One complete arc.</p>
           <ul class="package-includes" aria-label="Included">
             <li>Leadership behavioural profile</li>
             <li>10 × fortnightly 1:1 sessions</li>
@@ -409,7 +407,7 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
         <div class="package-card">
           <div class="package-name">20 sessions</div>
           <div class="package-sessions">Fortnightly · 10 months</div>
-          <p class="package-desc">For sustained change that extends beyond you into your team. The work happens through the work — each session builds on the last, personal growth first, then how that shifts the people around you. This is where the cascade effect happens.</p>
+          <p class="package-desc">Sustained change that extends beyond you into your team. Personal growth first, then how that shifts the people around you.</p>
           <ul class="package-includes" aria-label="Included">
             <li>Leadership behavioural profile</li>
             <li>20 × fortnightly 1:1 sessions</li>
@@ -432,37 +430,6 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
 
   <hr class="hr">
 
-  <!-- TESTIMONIALS -->
-  <div class="wrap">
-    <section class="testimonials" aria-label="In their words">
-      <div class="section-eyebrow">In their words</div>
-      <div class="testimonials-grid">
-        <div class="quote-card">
-          <blockquote>"What our executive team didn't see clearly was the missed opportunity of each other's unique perspective. Sara and team KINSPACE exposed the opportunity to see what was hidden — quickly establishing the role of trusted advisor with a genuine interest in moving our business forward."</blockquote>
-          <cite>Rob Freeman, CEO, Sime Darby Industrial Solutions</cite>
-        </div>
-        <div class="quote-card">
-          <blockquote>"Sara is constantly championing and supporting people of diverse identities and backgrounds and helping others do their best work. A key leadership lesson I've learnt from coaching with Sara is that establishing strong, healthy and real relationships is an important element of a successful partnership."</blockquote>
-          <cite>Executive coaching client</cite>
-        </div>
-        <div class="quote-card">
-          <blockquote>"Sara's commitment to creating spaces where we can feel creative, focused and relaxed is incredible. From inclusive systems that improve decision-making and increase participation, her commitment to accountability is second to none."</blockquote>
-          <cite>Executive coaching client</cite>
-        </div>
-        <div class="quote-card">
-          <blockquote>"Sara has an incredibly relatable way of communicating while coaching our enterprise leaders on how to understand other perspectives. It's in her DNA."</blockquote>
-          <cite>Enterprise coaching client</cite>
-        </div>
-        <div class="quote-card">
-          <blockquote>"Sara was my mentor before she was my co-founder. She understood what building a real business takes. She leads our brand, commercial and digital strategy, holds us accountable, and keeps us moving. Our stories, and the stories of so many women navigating fertility, are why bébé bloom exists."</blockquote>
-          <cite>Fatima Sampayo, co-founder, bébé bloom</cite>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <hr class="hr">
-
   <!-- TRACK RECORD -->
   <div class="wrap">
     <section class="track" aria-label="Track record">
@@ -470,15 +437,15 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
       <div class="track-grid">
         <div class="track-stat">
           <div class="track-number">14 years</div>
-          <div class="track-label">Coaching practice. C-suite leaders, founders, and entrepreneurs across Australia, Asia Pacific, the UK, and the US.</div>
+          <div class="track-label">Coaching C-suite leaders, founders, and entrepreneurs across four continents.</div>
         </div>
         <div class="track-stat">
           <div class="track-number">2012</div>
-          <div class="track-label">When Sara's coaching practice began. Before KINSPACE. Before the UN work. The methodology has been the same throughout.</div>
+          <div class="track-label">When the coaching practice began. The methodology has been the same throughout.</div>
         </div>
         <div class="track-stat">
           <div class="track-number">4 years</div>
-          <div class="track-label">On the Boosting Female Founders Initiative mentor panel. Alongside Rare Birds and TAFE QLD coaching programmes.</div>
+          <div class="track-label">Boosting Female Founders Initiative mentor panel. Rare Birds. TAFE QLD.</div>
         </div>
       </div>
     </section>
@@ -486,27 +453,23 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
 
   <hr class="hr">
 
-  <!-- FAQ -->
+  <!-- FAQ — progressive disclosure -->
   <div class="wrap">
     <section style="padding:var(--space-20) 0;border-top:1px solid var(--border);" aria-label="Common questions">
       <div class="section-eyebrow">Common questions</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-12) var(--space-16);margin-top:var(--space-4);">
-        <div>
-          <h3 style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink);margin-bottom:var(--space-3);line-height:1.3;">What does a session actually involve?</h3>
-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">Fortnightly 1:1 sessions that move between four modes — reducing cognitive load, surfacing what's already there, helping you trust the decision you already know, and following the connection that looks like a tangent but isn't. It starts with a leadership behavioural profile. The insight happens in the doing.</p>
-        </div>
-        <div>
-          <h3 style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink);margin-bottom:var(--space-3);line-height:1.3;">How long's a coaching engagement?</h3>
-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">10 sessions over 5 months, or 20 sessions over 10 months. Both fortnightly. The 20-session package includes a personal growth phase and a team growth phase — this is where the cascade effect happens. Both include quarterly outcomes reviews and accountability between sessions.</p>
-        </div>
-        <div>
-          <h3 style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink);margin-bottom:var(--space-3);line-height:1.3;">Is this coaching, consulting, or therapy?</h3>
-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">Coaching. The work happens through the work — not theory, not a psychology session. Each session moves something. You leave with a decision made, a pattern named, or an action committed to. Sara has been coaching since 2012. The methodology is rights-based and has been applied at Fortune 500 level and with first-time founders.</p>
-        </div>
-        <div>
-          <h3 style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink);margin-bottom:var(--space-3);line-height:1.3;">How do I know if it's the right fit?</h3>
-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">Start with a free 20-minute discovery session. No commitment, no pitch — just an honest conversation about what you're working with and whether coaching with Sara makes sense. Email <a href="mailto:sara@kinspace.co?subject=Coaching%20Discovery%20Session" style="color:var(--ink);font-weight:500;">sara@kinspace.co</a> with the subject line 'Coaching Discovery Session'.</p>
-        </div>
+      <div class="faq-section">
+        <details class="faq-item">
+          <summary>What does a coaching session involve?</summary>
+          <div class="faq-answer">Fortnightly 1:1 sessions that move between four modes — reducing cognitive load, surfacing what's already there, helping you trust the decision you already know, and following the connection that looks like a tangent but isn't. It starts with a leadership behavioural profile. The insight happens in the doing.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How long is a coaching engagement?</summary>
+          <div class="faq-answer">10 sessions over 5 months, or 20 sessions over 10 months. Both fortnightly. The 20-session package includes a personal growth phase and a team growth phase — this is where the cascade effect happens.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I know if it's the right fit?</summary>
+          <div class="faq-answer">Start with a free 20-minute discovery session. No commitment, no pitch — just an honest conversation about what you're working with. Email <a href="mailto:sara@kinspace.co?subject=Coaching%20Discovery%20Session" style="color:var(--ink);font-weight:500;">sara@kinspace.co</a>.</div>
+        </details>
       </div>
     </section>
   </div>
