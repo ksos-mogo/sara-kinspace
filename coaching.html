@@ -51,29 +51,14 @@
   ]
 }
 </script>
+<meta property="og:image" content="https://sara.kinspace.co/og-coaching.png">
+<!-- <script defer data-domain="sara.kinspace.co" src="https://plausible.io/js/script.js"></script> -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Executive Coaching with Sara Liyanage-Denney",
-  "provider": {
-    "@type": "Person",
-    "name": "Sara Liyanage-Denney",
-    "url": "https://sara.kinspace.co"
-  },
-  "url": "https://sara.kinspace.co/coaching",
-  "description": "High-performance coaching for C-suite leaders, founders, and small business owners. Rights-based, universally designed. 14 years of practice. 10 or 20 session packages, fortnightly.",
-  "areaServed": "Worldwide",
-  "serviceType": ["Executive coaching", "Leadership coaching", "Founder coaching", "Small business coaching"]
-}
-</script>
-<!-- <script defer data-domain="sara.kinspace.co" src="https://plausible.io/js/script.js"></script> -->
 <style>
 :root {
-  --ink:#211306;--ink-soft:#4D453C;--cream:#F4EDE5;--cream-deep:#EDE4D8;
+  --ink:#211306;--ink-soft:#4D453C;--ink-muted:#7A7268;--cream:#F4EDE5;--cream-deep:#EDE4D8;
   --border:#E0D6C8;--border-mid:#C8BFB4;
   --font-display:'Fraunces',Georgia,serif;--font-body:'Inter',system-ui,sans-serif;
   --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;
@@ -129,7 +114,7 @@ body{background:var(--cream);color:var(--ink);font-family:var(--font-body);font-
 .faq-item summary{font-family:var(--font-display);font-size:16px;font-weight:500;padding:18px 24px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--ink);min-height:48px;line-height:1.4;}
 .faq-item summary::-webkit-details-marker{display:none;}
 .faq-item summary::after{content:'+';font-size:20px;color:var(--ink-muted);font-weight:300;flex-shrink:0;margin-left:16px;}
-.faq-item[open] summary::after{content:'−';}
+.faq-item[open] summary::after{content:'\2212';}
 .faq-item[open] summary{border-bottom:1px solid var(--border);}
 .faq-answer{padding:18px 24px 22px;font-size:14px;color:var(--ink-soft);line-height:1.75;}
 
@@ -165,6 +150,8 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
 .approach-intro{font-size:18px;color:var(--ink-soft);max-width:600px;line-height:1.75;margin-bottom:var(--space-12);}
 .approach-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-10) var(--space-16);}
 @media(max-width:640px){.approach-grid{grid-template-columns:1fr;gap:var(--space-8);}}
+@media(max-width:900px){.modes-grid{grid-template-columns:1fr 1fr !important;}}
+@media(max-width:640px){.modes-grid{grid-template-columns:1fr !important;}}
 .approach-block h3{font-family:var(--font-display);font-weight:500;font-size:16px;color:var(--ink);margin-bottom:var(--space-3);}
 .approach-block p{font-size:15px;color:var(--ink-soft);line-height:1.75;}
 
@@ -202,7 +189,7 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
 .cta-links{display:flex;flex-direction:column;gap:var(--space-3);align-items:flex-start;}
 
 /* FOOTER */
-.site-footer{background:var(--ink);color:var(--cream);padding:var(--space-16) 0;}
+.site-footer{background:#1a1714;color:var(--cream);padding:var(--space-16) 0;}
 .footer-inner{display:grid;grid-template-columns:1fr 1fr 1fr;gap:var(--space-16);}
 @media(max-width:700px){.footer-inner{grid-template-columns:1fr;gap:var(--space-10);}}
 .footer-brand{font-family:var(--font-display);font-size:18px;color:var(--cream);font-weight:500;margin-bottom:var(--space-3);}
@@ -225,7 +212,7 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
       <a href="/coaching" class="active">Coaching</a>
       <a href="/speaking">Speaking</a>
       <a href="/work">Work</a>
-      <a href="https://ventures-kinspace.netlify.app/" class="external" target="_blank" rel="noopener">Ventures</a>
+      <a href="https://ventures.kinspace.co" class="external" target="_blank" rel="noopener">Ventures</a>
       <a href="/#contact">Contact</a>
     </nav>
   </div>
@@ -239,13 +226,13 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
       <div class="page-hero-inner">
         <div>
           <div class="page-eyebrow">Executive coaching</div>
-          <h1 class="page-title">Most of what you're looking for is already in the room.</h1>
+          <h1 class="page-title">Most of what you're looking for is already in the room</h1>
           <p class="page-lede">The decision you keep circling. The team dynamic you can't quite name. Coaching that gets to what's already present — and acts on it.</p>
         </div>
         <div>
-          <div class="pull-quote" style="margin:0;">
-            <blockquote>"The cascade effect in my business has been noticeable. Sara now coaches members of my team regularly."</blockquote>
-            <cite>M Kelly, Managing Director</cite>
+          <div class="quote-card" style="margin:0;">
+            <blockquote>"Sara supports by way of creating confidence to enable us to create our own path of success and empowerment."</blockquote>
+            <cite>Executive coaching client</cite>
           </div>
         </div>
       </div>
@@ -254,26 +241,23 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
 
   <hr class="hr">
 
-  <!-- OUTCOMES -->
+  <!-- WHO — recognition first -->
   <div class="wrap">
-    <section class="outcomes" aria-label="What coaching produces">
-      <div class="section-eyebrow">What it produces</div>
-      <div class="outcomes-grid">
-        <div class="outcome-item">
-          <div class="outcome-title">You'll stop deferring the decision.</div>
-          <p class="outcome-body">The one you've been circling for weeks. Coaching that gets you to the actual decision — not the safe version of it.</p>
+    <section class="who" aria-label="Who coaching is for">
+      <div class="section-eyebrow">Who it's for</div>
+      <h2 style="font-family:var(--font-display);font-weight:500;font-size:clamp(22px,2.8vw,30px);line-height:1.2;letter-spacing:-0.01em;color:var(--ink);margin-bottom:var(--space-5);">Leaders, founders, and small business owners</h2>
+      <div class="who-grid">
+        <div class="who-block">
+          <h3>The leader everyone is waiting on</h3>
+          <p>C-suite and senior leaders. You make the calls, you hold the complexity, and you rarely have somewhere to think before you decide.</p>
         </div>
-        <div class="outcome-item">
-          <div class="outcome-title">You'll hear what's actually being said.</div>
-          <p class="outcome-body">What your team is experiencing rarely makes it into the room. This changes that — before it becomes a retention problem.</p>
+        <div class="who-block">
+          <h3>The founder doing it without the infrastructure</h3>
+          <p>Building something real without the network or the capital others take for granted. If you've been building in systems that weren't designed for how you think, this is different.</p>
         </div>
-        <div class="outcome-item">
-          <div class="outcome-title">You'll stop losing the people you can't afford to lose.</div>
-          <p class="outcome-body">Not through a new HR policy. Through changing how you show up. When a leader shifts, the team shifts.</p>
-        </div>
-        <div class="outcome-item">
-          <div class="outcome-title">You'll see the market you've been missing.</div>
-          <p class="outcome-body">The customers your systems were never designed to reach. Universal design isn't an accommodation — it's a market intelligence strategy.</p>
+        <div class="who-block">
+          <h3>The leader with something they can't say out loud</h3>
+          <p>The situation you can't stop thinking about. The conversation that needs to happen and hasn't. Coaching for what doesn't fit in a framework.</p>
         </div>
       </div>
     </section>
@@ -281,7 +265,7 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
 
   <hr class="hr">
 
-  <!-- PULL QUOTE — after outcomes -->
+  <!-- PULL QUOTE -->
   <div class="wrap">
     <div class="pull-quote" aria-label="Client testimonial">
       <blockquote>"Sara doesn't tell you what to think. She shows you what you already know — and then the thing you were stuck on just... moves."</blockquote>
@@ -291,22 +275,32 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
 
   <hr class="hr">
 
-  <!-- WHO -->
+  <!-- WHAT HAPPENS -->
   <div class="wrap">
-    <section class="who" aria-label="Who coaching is for">
-      <div class="section-eyebrow">Who it's for</div>
-      <div class="who-grid">
-        <div class="who-block">
-          <h3>The leader everyone is waiting on.</h3>
-          <p>C-suite and senior leaders. You make the calls, you hold the complexity, and you rarely have somewhere to think before you decide.</p>
+    <section style="padding:var(--space-20) 0;" aria-label="What coaching looks like">
+      <div class="section-eyebrow">What happens</div>
+      <h2 style="font-family:var(--font-display);font-weight:500;font-size:clamp(22px,2.8vw,30px);line-height:1.2;letter-spacing:-0.01em;color:var(--ink);margin-bottom:var(--space-5);">The pattern you can't see from where you're standing</h2>
+      <div style="max-width:680px;">
+        <p style="font-size:17px;color:var(--ink-soft);line-height:1.8;margin-bottom:var(--space-6);">Every leader has a view their role creates — and a view it blocks. Sara surfaces what's already there: the decision you already know how to make, what your team is experiencing that never makes it into the room, the market your systems were never designed to reach.</p>
+        <p style="font-size:17px;color:var(--ink-soft);line-height:1.8;margin-bottom:var(--space-6);">The methodology has been the same for 14 years. Five questions in every room: who's most impacted, who's not speaking, who's not represented, how am I contributing to the problem, how can I create space. The answers are usually already there. The work is creating the conditions to hear them.</p>
+        <p style="font-size:17px;color:var(--ink-soft);line-height:1.8;margin-bottom:var(--space-10);">Sessions move between four modes — automatically, without needing to name what's needed.</p>
+      </div>
+      <div class="modes-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-6);">
+        <div style="border-top:1px solid var(--border-mid);padding-top:var(--space-4);">
+          <span style="font-family:var(--font-display);font-weight:500;font-size:15px;color:var(--ink);">Move</span>
+          <p style="font-size:14px;color:var(--ink-soft);line-height:1.65;margin-top:var(--space-2);">Something's happening. Reduce cognitive load. Find the one thread to pull.</p>
         </div>
-        <div class="who-block">
-          <h3>The founder doing it without the infrastructure.</h3>
-          <p>Building something real without the network or the capital others take for granted. If you've been building in systems that weren't designed for how you think, this is different.</p>
+        <div style="border-top:1px solid var(--border-mid);padding-top:var(--space-4);">
+          <span style="font-family:var(--font-display);font-weight:500;font-size:15px;color:var(--ink);">See</span>
+          <p style="font-size:14px;color:var(--ink-soft);line-height:1.65;margin-top:var(--space-2);">Something's true that hasn't been fully looked at. Hold the pattern without judgment.</p>
         </div>
-        <div class="who-block">
-          <h3>The leader with something they can't say out loud.</h3>
-          <p>The situation you can't stop thinking about. The conversation that needs to happen and hasn't. Coaching for what doesn't fit in a framework.</p>
+        <div style="border-top:1px solid var(--border-mid);padding-top:var(--space-4);">
+          <span style="font-family:var(--font-display);font-weight:500;font-size:15px;color:var(--ink);">Decide</span>
+          <p style="font-size:14px;color:var(--ink-soft);line-height:1.65;margin-top:var(--space-2);">You already know. The session helps you trust it. The decision is marked. It holds.</p>
+        </div>
+        <div style="border-top:1px solid var(--border-mid);padding-top:var(--space-4);">
+          <span style="font-family:var(--font-display);font-weight:500;font-size:15px;color:var(--ink);">Link</span>
+          <p style="font-size:14px;color:var(--ink-soft);line-height:1.65;margin-top:var(--space-2);">The tangent is the thing. The connection that looks like a distraction is usually where the real insight lives.</p>
         </div>
       </div>
     </section>
@@ -314,35 +308,7 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
 
   <hr class="hr">
 
-  <!-- APPROACH -->
-  <div class="wrap">
-    <section class="approach" aria-label="The approach">
-      <div class="section-eyebrow">The approach</div>
-      <p class="approach-intro">Sara surfaces what's already there — the pattern you can't see from where you're standing, the decision you already know how to make. The methodology has been the same for 14 years: find what's been missed, then build from what you find.</p>
-      <div class="approach-grid">
-        <div class="approach-block">
-          <h3>Seeing what your position makes invisible</h3>
-          <p>Every leader has a view their role creates — and a view it blocks. Coaching that expands what you're able to see from where you stand.</p>
-        </div>
-        <div class="approach-block">
-          <h3>How you're showing up</h3>
-          <p>How you respond under pressure. What you reach for in conflict. What you'd change if you could see it in real time. Pattern recognition that changes what happens next.</p>
-        </div>
-        <div class="approach-block">
-          <h3>The question before the strategy</h3>
-          <p>Who's most impacted, who's not speaking, what's being missed. The answers are usually already in the room.</p>
-        </div>
-        <div class="approach-block">
-          <h3>Accountability that moves things</h3>
-          <p>What you commit to in the session, you deliver before the next one. Fortnightly — enough space to do the work, not so much that momentum is lost.</p>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <hr class="hr">
-
-  <!-- PULL QUOTE — after approach -->
+  <!-- PULL QUOTE -->
   <div class="wrap">
     <div class="pull-quote" aria-label="Client testimonial">
       <blockquote>"What our executive team didn't see clearly was the missed opportunity of each other's unique perspective. Sara exposed the opportunity to see what was hidden."</blockquote>
@@ -352,38 +318,11 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
 
   <hr class="hr">
 
-  <!-- MOVE SEE DECIDE LINK -->
-  <div class="wrap">
-    <section style="padding:var(--space-20) 0;" aria-label="How Sara works">
-      <div class="section-eyebrow">How it works</div>
-      <p style="font-size:18px;color:var(--ink-soft);max-width:600px;line-height:1.75;margin-bottom:var(--space-12);">Every session moves between four modes — automatically, without needing to name what's needed.</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-8) var(--space-16);">
-        <div style="border-top:1px solid var(--border-mid);padding-top:var(--space-5);">
-          <div style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink);margin-bottom:var(--space-3);">Move</div>
-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">Something's happening. Reduce cognitive load. Find the one thread to pull.</p>
-        </div>
-        <div style="border-top:1px solid var(--border-mid);padding-top:var(--space-5);">
-          <div style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink);margin-bottom:var(--space-3);">See</div>
-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">Something's true that hasn't been fully looked at. Hold the pattern without judgment.</p>
-        </div>
-        <div style="border-top:1px solid var(--border-mid);padding-top:var(--space-5);">
-          <div style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink);margin-bottom:var(--space-3);">Decide</div>
-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">You already know. The session helps you trust it. The decision is marked. It holds.</p>
-        </div>
-        <div style="border-top:1px solid var(--border-mid);padding-top:var(--space-5);">
-          <div style="font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink);margin-bottom:var(--space-3);">Link</div>
-          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;">The tangent is the thing. The connection that looks like a distraction is usually where the real insight lives.</p>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <hr class="hr">
-
   <!-- PACKAGES -->
   <div class="wrap">
     <section class="packages" aria-label="Coaching packages">
       <div class="section-eyebrow">Packages</div>
+      <h2 style="font-family:var(--font-display);font-weight:500;font-size:clamp(22px,2.8vw,30px);line-height:1.2;letter-spacing:-0.01em;color:var(--ink);margin-bottom:var(--space-5);">Two options, both fortnightly</h2>
       <p class="packages-intro">Two packages. Both fortnightly. Each session moves something.</p>
       <div class="packages-grid">
         <div class="package-card">
@@ -434,6 +373,7 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
   <div class="wrap">
     <section class="track" aria-label="Track record">
       <div class="section-eyebrow">Track record</div>
+      <h2 style="font-family:var(--font-display);font-weight:500;font-size:clamp(22px,2.8vw,30px);line-height:1.2;letter-spacing:-0.01em;color:var(--ink);margin-bottom:var(--space-5);">A decade of results</h2>
       <div class="track-grid">
         <div class="track-stat">
           <div class="track-number">14 years</div>
@@ -479,7 +419,7 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
   <!-- CTA -->
   <div class="wrap">
     <section class="page-cta" aria-label="Book a discovery session">
-      <h2>Start with a conversation.</h2>
+      <h2>Start with a conversation</h2>
       <p>A free 20-minute discovery session to find out if coaching with Sara is the right fit. No commitment, no pitch — just an honest conversation about what you're working with and what might help.</p>
       <div class="cta-links">
         <a class="text-link text-link-lg" href="mailto:sara@kinspace.co?subject=Coaching%20Discovery%20Session">
@@ -509,7 +449,7 @@ h1.page-title{font-family:var(--font-display);font-weight:500;font-size:clamp(30
           <a class="footer-link" href="/coaching">Executive coaching <svg class="arr" width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <a class="footer-link" href="/speaking">Keynote speaking <svg class="arr" width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <a class="footer-link" href="/work">Consulting &amp; enterprise <svg class="arr" width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          <a class="footer-link" href="https://ventures-kinspace.netlify.app/" target="_blank" rel="noopener">KINSPACE Ventures <svg class="arr" width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="footer-link" href="https://ventures.kinspace.co" target="_blank" rel="noopener">KINSPACE Ventures <svg class="arr" width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 10L10 2M10 2H5M10 2V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
       <div>
